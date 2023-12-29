@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  background-image: url("images/social-media-icons.webp");
+  width: 100vw;
+  height: 2.5rem;
+}
+
+.top-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    font-size: 15px;
+    font-weight: 700;
+    background: rgba(19, 122, 159, 0.8);
+    color: #fff;
+}
+
+nav{
+    /* background: red; */
+    width: 100vw;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8rem;
+}
+.logo{
+    color: #183B56;
+    font-size: 18px;
+    font-weight: 600;
+}
+.main-menu{
+    display: flex;
+    justify-content: center;
+}
+.main-menu > ul{
+    display: flex;
+    justify-content: center;
+}
+.main-menu > ul > li{
+    list-style: none;
+    margin: 0 5px;
+    padding: 6px 8px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.main-menu a{
+    text-decoration: none;
+    color: #183B56;
+}
+.btn{
+    margin: 0 16px;
+    padding: 6px 12px;
+    border: 1px solid #183B56;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn-1{
+    background: #fafafa;
+}
+.btn-2{
+    background: #40A9FD;
+}
+.btn-2:hover{
+    background: #0061AD;
+}
+.btn-2 a{
+    color: #fff;
+}
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8rem;
+    margin: 2rem 0;
+}
+.hero-section a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.left-hero-section{
+    padding-right: 5.5rem;
+}
+.left-hero-section h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #183B56;
+    margin-bottom: 10px;
+}
+.left-hero-section p{
+    font-size: 20px;
+    color: #183b56ce;
+    line-height: 1.8rem;
+    margin-bottom: 15px;
+}
+.hero-btn{
+    padding: 10px 14px;
+    border: 1px solid #183B56;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    background: #40A9FD;
+    font-size: 16px;
+}
+.hero-btn:hover{
+    background: #0061AD;
+}
+
+.right-hero-section img{
+    width: 38vw;
+}
+
+.company-logo p{
+    text-align: center;
+    color: #183B56;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.company-logo > div{
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.company-logo > div img{
+    width: 135px;
+}
+
+.features h2{
+    text-align: center;
+    color: #183B56;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.btn-feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-feature > button{
+    color: #40A9FD;
+    text-align: center;
+    font-size: 17px;
+    border: 1px solid #183B56;
+    border-radius: 3px;
+    background: transparent;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+.btn-feature a{
+    padding: 10px;
+    color: #183B56;
+    text-decoration: none;
+}
+.btn-feature > button:hover{
+    color: #40A9FD;
+    border: 1px solid #40A9FD;
+}
+.btn-feature a:hover{
+    color: #40A9FD;
+}
+
+.box-cards{
+display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 2rem 8rem;
+  gap: 10px;
+}
+.box{
+    text-align: center;
+    color: #183b56ad;
+    padding: 10px 20px;
+}
+.box p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.box > div{
+    margin-bottom: 10px;
+}
