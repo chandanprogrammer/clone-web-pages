@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(9, 30, 72, 0.861);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+::placeholder {
+    color: rgb(199, 198, 198);
+}
+
+input:focus {
+    outline: none;
+}
+
+.container {
+    width: 50%;
+    background-color: rgb(31, 31, 48);
+    border: 2px solid rgb(5, 192, 192);
+    box-shadow: 2px 2px 10px rgb(5, 192, 192);
+    color: #fff;
+}
+
+/* ---------------------------  */
+.signup {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.signup .left,
+.login .right {
+    position: relative;
+    padding: 20px 30px;
+    background-image: linear-gradient(200deg, rgb(4, 222, 222), rgb(3, 88, 88));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup .left h2,
+.login .right h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.signup .left p,
+.login .right p {
+    font-size: 14px;
+    color: rgb(223, 225, 228);
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.signup .triangle {
+    position: absolute;
+    border-style: solid;
+    border-width: 18.5em 0 0 18.5em;
+    border-color: transparent transparent transparent rgb(31, 31, 48);
+    bottom: 0;
+    right: 0;
+    transform: rotate(270deg);
+}
+
+.signup .right {
+    padding: 20px 20px 20px 0;
+}
+
+.signup .right h2,
+.login .left h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.signup .right input,
+.login .left input {
+    border: none;
+    background-color: transparent;
+    color: rgb(209, 209, 209);
+    /* caret-color: #fff; */
+}
+
+.username {
+    border-bottom: 1.5px solid #dcdbdb;
+    display: flex;
+    padding-top: 15px;
+}
+
+.username input {
+    margin-bottom: 5px;
+    padding: 4px 2px;
+}
+
+.email {
+    border-bottom: 1.5px solid #dcdbdb;
+    display: flex;
+}
+
+.email input {
+    margin-bottom: 5px;
+    padding: 4px 2px;
+}
+
+.password {
+    border-bottom: 1.5px solid #dcdbdb;
+    display: flex;
+}
+
+.password input {
+    margin-bottom: 5px;
+    padding: 4px 2px;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.signup .right div,
+.login .left div {
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    font-size: 13px;
+    margin-top: 15px;
+    padding: 5px 0;
+    border-radius: 25px;
+    border: none;
+    color: #FFF;
+    background-image: linear-gradient(10deg, rgb(6, 81, 81), rgb(4, 222, 222));
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(10deg, rgb(4, 222, 222), rgb(6, 81, 81));
+}
+
+.link-option {
+    font-size: 12px;
+    padding-top: 4px;
+    text-align: center;
+}
+
+.link-option p {
+    display: inline;
+    margin-right: 6px;
+}
+
+.link-option a {
+    color: rgb(5, 192, 192);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.login {
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+}
+
+.login .right h2,
+.login .right p {
+    text-align: end;
+}
+
+.login .triangle {
+    position: absolute;
+    border-style: solid;
+    border-width: 18.5em 0 0 18.5em;
+    border-color: transparent transparent transparent rgb(31, 31, 48);
+    bottom: 0;
+    left: 0;
+}
+
+.login .left {
+    padding: 40px 20px 40px 20px;
+}
+
+/* Mobile Respnsive  */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 98%;
+    }
+
+    .signup {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .signup .left,
+    .login .right {
+        padding: 50px 30px;
+        align-items: center;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+    .signup .right, 
+    .login .left{
+        padding: 50px 70px;
+    }
+
+    .signup .right h2,
+    .login .left h2 {
+        margin-bottom: 25px;
+        margin-top: -20px;
+    }
+    .icon {
+        margin-left: 45%;
+    }
+    .username, .email, .password {
+        padding-top: 15px;
+    }
+    button{
+    margin-top: 22px;
+    margin-bottom: 12px;
+    width: 40%;
+    }
+    .login {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .login .right{
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .login .right h2,
+    .login .right p {
+    text-align: start;
+}
+}
