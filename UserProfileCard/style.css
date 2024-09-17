@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.584);
+}
+.card{
+    background-color: #db5d18;
+    border-radius: 12px;
+    box-shadow: 1px 1px 4px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+.profile-icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.profile-icon i{
+    cursor: pointer;
+    padding: 4px;
+}
+.profile-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.profile-image-inner{
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    background-image: url(Profile.jpg);
+    background-size: cover;
+}
+.profile-detail{
+    text-align: center;
+}
+.profile-detail h3{
+    font-size: 16px;
+    margin-top: 12px;
+    font-family: 500;
+}
+.profile-detail p{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+.social-icon{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.social-icon a{
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 2px;
+    padding: 4px;
+}
+.card button{
+    padding: 10px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 6px #db5d18;
+    color: #db5d18;
+    z-index: 1;
+    position: absolute;
+    left: 35%;
+    bottom: 23%;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: #ebebeb;
+    box-shadow: 1px 1px 6px #be4706;
+}
+.more-details {
+    background-color: #fff;
+    border-radius: 12px;
+    color: #3f3f3f;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 50px;
+}
+.more-details p{
+    margin-top: 20px ;
+}
+.more-details i{
+    margin-top: 20px;
+    cursor: pointer;
+    color: #db5d18;
+}
